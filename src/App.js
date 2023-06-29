@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
+import NavMenu from "./components/NavMenu";
+import Projets from "./pages/Projets";
+import Contact from "./pages/Contact";
+import Accueil from "./pages/Accueil";
+import Projet1 from "./pages/Projet1";
+import Projet2 from "./pages/Projet2";
+import Projet3 from "./pages/Projet3";
+import Témoignages from "./pages/Témoignages";
+import TemoignagesListe from "./pages/TemoignagesListe";
+import TemoignagesModification from "./pages/TemoignagesModification";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <NavMenu />
+        <Switch>
+          <Route exact path="/Projets" component={Projets} />
+          <Route exact path="/projet-1" component={Projet1} />
+          <Route exact path="/projet-2" component={Projet2} />
+          <Route exact path="/projet-3" component={Projet3} />
+          <Route exact path="/Contact" component={Contact} />
+          <Route exact path="/Témoignages" component={Témoignages} />
+          <Route exact path="/Liste-des-temoignages" component={TemoignagesListe} />
+          <Route exact path="/Modification" component={TemoignagesModification} />
+          <Route exact path="/" component={Accueil} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 
 export default App;
+

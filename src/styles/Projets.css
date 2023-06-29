@@ -1,0 +1,64 @@
+.projets__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+  }
+  
+  .projets__searchbar {
+    margin-top: 2rem;
+  }
+  
+  .projets__searchbar form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .projets__searchbar input[type="text"] {
+    padding: 0.5rem;
+  }
+  
+  .projets__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .projets__item {
+    margin: 0 1rem 2rem;
+    width: 300px;
+  }
+  
+  .projets__item h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projets__item p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .projets__item a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .projets__item a:hover {
+    text-decoration: none;
+  }
+  
+  .projets__item:nth-child(1) {
+  background-color: #ff0000; /* Couleur de fond pour le premier projet */
+}
+
+.projets__item:nth-child(2) {
+  background-color: #00ff00; /* Couleur de fond pour le deuxième projet */
+}
+
+.projets__item:nth-child(3) {
+  background-color: #0000ff; /* Couleur de fond pour le troisième projet */
+}
+
+/* Ajoutez autant de sélecteurs nth-child que nécessaire pour chaque projet */

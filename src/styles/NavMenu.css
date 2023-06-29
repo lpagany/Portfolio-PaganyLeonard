@@ -1,0 +1,59 @@
+.NavMenuStyles {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background: beige;
+  }
+  
+  .NavMenuStyles ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+  .NavMenuStyles ul li {
+    display: inline-block;
+    border-radius: 8px;
+    transition: 0.3s ease background-color;
+  }
+  .NavMenuStyles ul li:hover {
+    background-color: var(--deep--dark);
+  }
+  .NavMenuStyles ul li a {
+    display: inline-block;
+    font-family: "RobotoMono Regular";
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: var(--gray-1);
+    outline: none;
+  }
+  .NavMenuStyles ul li a.active {
+    color: green;
+  }
+  .NavMenuStyles .mobile-menu-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 4rem;
+    cursor: pointer;
+    display: none;
+    outline: none;
+  }
+  .NavMenuStyles .mobile-menu-icon * {
+    pointer-events: none;
+  }
+  .NavMenuStyles .closeNavIcon {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .NavMenuStyles {
+      padding: 0;
+    }
+    .NavMenuStyles .hide-item {
+      transform: translateY(calc(-100% - var(--top)));
+    }
+  }
+  

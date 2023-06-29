@@ -1,0 +1,37 @@
+/* Témoignages.css */
+
+.temoignages__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Ajuster la hauteur selon les besoins */
+}
+
+.temoignages__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temoignages__item {
+  text-align: center;
+  margin: 0 20px; /* Espacement horizontal entre les éléments */
+}
+
+.temoignages__item h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.temoignages__item a {
+  padding: 12px 24px;
+  background-color: #4285f4;
+  color: #fff;
+  text-decoration: center;
+  border-radius: 8px;
+}
+
+.temoignages__item a:hover {
+  background-color: #33d66f;
+}
+

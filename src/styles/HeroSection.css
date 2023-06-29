@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajustez la hauteur selon vos besoins */
+  }
+  
+  .hero__heading {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .hero__name {
+    font-size: 3rem;
+    font-weight: bold;
+    font-display: black;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .hero__img {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 35rem;
+  }
+  
+  .hero__img img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hero__info {
+    text-align: justify;
+    text-overflow: 1.5rem;
+    margin-bottom: 10rem;
+  }
+  .hero__name {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  
