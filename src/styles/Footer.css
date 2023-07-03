@@ -2,11 +2,16 @@
   background-color: #333;
   color: #fff;
   padding: 1rem 0;
-  position: fixed;
+  position: fixed; /* Modifier la position en "absolute" */
   bottom: 0;
   width: 100%;
   text-align: center;
   display: flex;
+  left: 0;
+  height: 0px;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
 }
 
 .container {
@@ -29,6 +34,15 @@
 
 .footer__links a:hover {
   color: #ffcc00;
+}
+
+.page-container {
+  width: 100%;
+  min-height: 100vh; /* Utilisation de min-height au lieu de height pour s'assurer que le contenu s'affiche correctement */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 50px; /* Ajout du padding-bottom pour la hauteur du footer */
 }
 
 
