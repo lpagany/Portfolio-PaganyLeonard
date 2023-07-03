@@ -35,7 +35,7 @@ export default function Projet1() {
           <li key={feature}>{feature}</li>
         ))}
       </ul>
-      <a href={projetMaxFit.link}>lien</a>
+      <a href={projetMaxFit.link}>Lien vers Projet 1</a>
       <Link to="/Projets">Retour à la liste des projets</Link>
       <SearchBar />
     </div>
