@@ -6,15 +6,15 @@ export default function Footer() {
   const links = [
     {
       title: "Facebook",
-      path: "http://facebook.com",
+      path: "https://www.facebook.com/pagany.leonard",
     },
     {
       title: "Twitter",
-      path: "http://twitter.com",
+      path: "https://twitter.com/PaganyLEONARD",
     },
     {
       title: "LinkedIn",
-      path: "https://www.linkedin.com/in/pagany-léonard-41a688a",
+      path: "https://www.linkedin.com/in/pagany-l%C3%A9onard-41a688a/",
     },
     {
       title: "GitHub",
