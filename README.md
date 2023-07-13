@@ -75,7 +75,7 @@ Page Accueil
 
 <img src="MonPortfoliocapture/Accueil.png" alt="Home Page" width="60%" height="60%">
 
-Page Projet
+Page Projets
 
 <img src="MonPortfoliocapture/Projet.png" alt="Home Page" width="60%" height="60%">
 
