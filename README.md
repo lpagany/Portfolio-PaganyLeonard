@@ -71,10 +71,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ## Portfolio Preview
-Home Page
+Page Accueil
 
-<img src="MonPortfoliocapture/1.png" alt="Home Page" width="60%" height="60%">
+<img src="MonPortfoliocapture/Accueil.png" alt="Home Page" width="60%" height="60%">
 
-Contact Page
+Page Projet
 
-<img src="MonPortfoliocapture/2.png" alt="Home Page" width="60%" height="60%">
+<img src="MonPortfoliocapture/Projet.png" alt="Home Page" width="60%" height="60%">
+
+Page Contact
+<img src="MonPortfoliocapture/Contact.png" alt="Home Page" width="60%" height="60%">
+
+Page Témoignages
+<img src="MonPortfoliocapture/Témoignages.png" alt="Home Page" width="60%" height="60%">
