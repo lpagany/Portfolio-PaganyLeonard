@@ -11,12 +11,15 @@ import Projet3 from "./pages/Projet3";
 import Témoignages from "./pages/Témoignages";
 import TemoignagesListe from "./pages/TemoignagesListe";
 import TemoignagesModification from "./pages/TemoignagesModification";
+import { TemoignagesProvider } from "../src/pages/store";
+
 
 function App() {
   return (
     <>
       <Router>
         <NavMenu />
+        <TemoignagesProvider>
         <Switch>
           <Route exact path="/Projets" component={Projets} />
           <Route exact path="/projet-1" component={Projet1} />
@@ -28,6 +31,7 @@ function App() {
           <Route exact path="/Modification" component={TemoignagesModification} />
           <Route exact path="/" component={Accueil} />
         </Switch>
+        </TemoignagesProvider>
       </Router>
     </>
   );

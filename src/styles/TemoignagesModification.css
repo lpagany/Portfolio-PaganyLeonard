@@ -41,6 +41,10 @@
   margin-top: 20px;
 }
 
+.temoignages-liste-content {
+  /* Styles pour le contenu du cadre */
+  overflow-y: auto;
+}
 
 
   

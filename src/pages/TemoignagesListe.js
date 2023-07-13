@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { TemoignagesContext } from "./store";
 import "../styles/TemoignagesListe.css";
 import Footer from "../components/Footer";
+;
 
 export default function TemoignagesListe() {
-  const [temoignages, setTemoignages] = useState([]);
+  const {
+    temoignages,
+    ajouterTemoignage,
+    messageModification,
+    modifierTemoignage,
+  } = useContext(TemoignagesContext);
+
   const [nouveauTemoignage, setNouveauTemoignage] = useState("");
   const [nomUtilisateur, setNomUtilisateur] = useState("");
-  const [messageAjout, setMessageAjout] = useState("");
   const location = useLocation();
 
   const handleAjouterTemoignage = () => {
@@ -17,26 +24,35 @@ export default function TemoignagesListe() {
       message: nouveauTemoignage,
     };
 
-    setTemoignages([...temoignages, temoignage]);
-    setMessageAjout("Votre témoignage a été ajouté avec succès. Merci !");
+    ajouterTemoignage(temoignage);
     setNouveauTemoignage("");
     setNomUtilisateur("");
+  };
+
+  const handleModifierTemoignage = (temoignage) => {
+    // Mettez ici la logique pour la modification du témoignage
+    modifierTemoignage(temoignage);
   };
 
   return (
     <div className="temoignages-liste-container">
       <div className="temoignages-liste-content">
         <h2>Ajouter un témoignage</h2>
-        {messageAjout && <p className="message-ajout">{messageAjout}</p>}
+        {messageModification && (
+          <p className="message-modification">{messageModification}</p>
+        )}
         <input
           type="text"
           value={nomUtilisateur}
           onChange={(e) => setNomUtilisateur(e.target.value)}
+          className="custom-input"
           placeholder="Nom d'utilisateur"
         />
         <textarea
           value={nouveauTemoignage}
           onChange={(e) => setNouveauTemoignage(e.target.value)}
+          className="custom-textarea"
+          placeholder="Ajoutez votre témoignage ici"
         ></textarea>
         <button onClick={handleAjouterTemoignage}>Ajouter</button>
         {temoignages.length > 0 && (
@@ -44,7 +60,8 @@ export default function TemoignagesListe() {
             <h2>Liste des témoignages</h2>
             <ul>
               {temoignages.map((temoignage) => (
-                <li key={temoignage.id}>
+                <li key={temoignage.id} className="temoignage-item">
+                  {/* Contenu du témoignage */}
                   <strong>{temoignage.nomUtilisateur}:</strong>{" "}
                   {temoignage.message}
                   <Link
@@ -52,6 +69,7 @@ export default function TemoignagesListe() {
                       pathname: "/Modification",
                       state: { temoignage },
                     }}
+                    onClick={() => handleModifierTemoignage(temoignage)}
                   >
                     Modifier
                   </Link>
@@ -70,3 +88,9 @@ export default function TemoignagesListe() {
     </div>
   );
 }
+
+
+
+
+
+

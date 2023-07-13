@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from './Projets';
 import '../styles/Projet2.css';
+import image1 from '../assets/images/e-commerce-1182903_640.png';
+import image2 from '../assets/images/shopping-2477511_1280.png';
+import image3 from '../assets/images/costume.jpg';
 
 export default function Projet2() {
   const projetMode = {
@@ -30,11 +33,20 @@ export default function Projet2() {
           <li key={feature}>{feature}</li>
         ))}
       </ul>
+      <h3>Images :</h3>
+      <div className="projet-images">
+        <img src={image1} alt="e-commerce-1182903_640.png" />
+        <img src={image2} alt="shopping-2477511_1280.png" />
+        <img src={image3} alt="costume.jpg" />
+      </div>
       <Link to="/Projets">Retour à la liste des projets</Link>
       <SearchBar />
     </div>
   );
 }
+
+
+
 
 
 
