@@ -14,8 +14,7 @@ export default function Témoignages({ temoignages, setTemoignages }) {
   };
 
   const handleUpdateTemoignage = () => {
-    // Logique pour mettre à jour le témoignage dans votre source de données (backend, Redux store, etc.)
-    // ...
+  
 
     setEditMode(false);
     setEditedTemoignage(null);
@@ -93,4 +92,3 @@ Témoignages.propTypes = {
   temoignages: PropTypes.array.isRequired,
   setTemoignages: PropTypes.func.isRequired,
 };
-

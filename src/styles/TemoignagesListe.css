@@ -16,7 +16,7 @@
   }
 
   .temoinage-item {
-    max-width: 600px; /* Ajustez la valeur selon vos besoins */
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -68,8 +68,8 @@
   }
   
   .liste-temoignages {
-    max-height: 300px; /* Définir la hauteur maximale */
-    overflow-y: auto; /* Ajouter une barre de défilement vertical si nécessaire */
+    max-height: 300px; 
+    overflow-y: auto;
   }
   
   .temoignages-list {
@@ -82,7 +82,7 @@
     margin-bottom: 10px;
   }
   
-  /* Autres styles CSS */
+
   
   
   

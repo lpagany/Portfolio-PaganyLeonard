@@ -2,7 +2,7 @@
   background-color: #333;
   color: #fff;
   padding: 1rem 0;
-  position: fixed; /* Modifier la position en "absolute" */
+  position: fixed; 
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -38,11 +38,11 @@
 
 .page-container {
   width: 100%;
-  min-height: 100vh; /* Utilisation de min-height au lieu de height pour s'assurer que le contenu s'affiche correctement */
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 50px; /* Ajout du padding-bottom pour la hauteur du footer */
+  padding-bottom: 50px; 
 }
 
 

@@ -3,9 +3,6 @@ import { MdSearch } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "../styles/Projets.css";
 import Footer from "../components/Footer";
-//import maxFitImage from "../assets/images/MaxFit.png";
-//import modeImage from "../assets/images/e-commerce-1182903_640.png";
-//import businessPlanImage from "../assets/images/businessPlan.jpeg";
 
 export function SearchBar({ handleSearch }) {
   return (

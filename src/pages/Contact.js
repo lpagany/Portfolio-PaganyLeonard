@@ -45,9 +45,6 @@ export default function Contact() {
       return;
     }
 
-    // Envoyer les données du formulaire
-    // ... votre code d'envoi ici ...
-
     // Réinitialiser les champs du formulaire
     setFirstName("");
     setLastName("");
