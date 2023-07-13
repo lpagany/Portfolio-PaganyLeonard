@@ -22,6 +22,7 @@
 
 .left {
   flex: 1;
+  text-align: start;
 }
 
 .cv-container {
@@ -94,8 +95,8 @@
 }
 .image-container {
   float: right;
-  width: 550px; /* Définir la largeur souhaitée */
-  height: 500px; /* Définir la hauteur souhaitée */
+  width: 550px; 
+  height: 500px;
   overflow: hidden;
   border-radius: 100%;
 }

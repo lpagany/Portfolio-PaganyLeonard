@@ -1,0 +1,47 @@
+.testimonies-format {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.testimonies-format-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonies-format-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.testimonies-format-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.testimonies-format h3 {
+  margin: 0;
+}
+
+.testimonies-format p {
+  margin: 8px 0;
+}
+
+.testimonies-format button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.testimonies-format button:hover {
+  background-color: #0056b3;
+}
+
+  

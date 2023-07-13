@@ -3,7 +3,9 @@ import { MdSearch } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "../styles/Projets.css";
 import Footer from "../components/Footer";
-
+//import maxFitImage from "../assets/images/MaxFit.png";
+//import modeImage from "../assets/images/e-commerce-1182903_640.png";
+//import businessPlanImage from "../assets/images/businessPlan.jpeg";
 
 export function SearchBar({ handleSearch }) {
   return (
@@ -40,18 +42,21 @@ export default function Projets() {
       title: "Projet 1",
       description: "MaxFit",
       link: "/projet-1",
+      //image: maxFitImage,
     },
     {
       id: 2,
       title: "Projet 2",
-      description: "Commerce electronique de mode",
+      description: "Commerce électronique de mode",
       link: "/projet-2",
+      //image: modeImage,
     },
     {
       id: 3,
       title: "Projet 3",
       description: "Business plan",
       link: "/projet-3",
+      //image: businessPlanImage,
     },
   ];
 
@@ -68,7 +73,12 @@ export default function Projets() {
           <div className="projets__item" key={project.id}>
             <h2>{project.title}</h2>
             <p>{project.description}</p>
-            <Link to={project.link}>Voir {project.title}</Link>
+            <Link
+              to={project.link}
+              style={{ backgroundImage: `url(${project.image})` }}
+            >
+              Voir {project.title}
+            </Link>
           </div>
         ))}
       </div>
@@ -76,5 +86,8 @@ export default function Projets() {
     </div>
   );
 }
+
+
+
 
 

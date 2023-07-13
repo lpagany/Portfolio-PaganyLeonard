@@ -5,14 +5,6 @@ import "../styles/Footer.css";
 export default function Footer() {
   const links = [
     {
-      title: "Facebook",
-      path: "https://www.facebook.com/pagany.leonard",
-    },
-    {
-      title: "Twitter",
-      path: "https://twitter.com/PaganyLEONARD",
-    },
-    {
       title: "LinkedIn",
       path: "https://www.linkedin.com/in/pagany-l%C3%A9onard-41a688a/",
     },

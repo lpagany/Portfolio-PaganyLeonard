@@ -4,6 +4,24 @@
     align-items: center;
     height: 100vh;
   }
+
+  .custom-textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .custom-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .temoinage-item {
+    max-width: 600px; /* Ajustez la valeur selon vos besoins */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
   
   .temoignages-liste-content {
     text-align: center;
@@ -48,6 +66,23 @@
   .temoignages-liste-content .liste-temoignages li {
     margin-bottom: 10px;
   }
+  
+  .liste-temoignages {
+    max-height: 300px; /* Définir la hauteur maximale */
+    overflow-y: auto; /* Ajouter une barre de défilement vertical si nécessaire */
+  }
+  
+  .temoignages-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .temoignage-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Autres styles CSS */
   
   
   
